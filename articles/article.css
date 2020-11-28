@@ -1,0 +1,268 @@
+/********************************************** GENERAL STYLES **********************************************************/
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../../images/bg01.png") repeat;
+  line-height: 1;
+}
+
+#logo {
+  float: left;
+  width: 70px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.church-name {
+  display: block;
+  float: left;
+  margin-top: 14px;
+  text-shadow: 5px 5px 5px black;
+  color: #dcc2a0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo-1 {
+  color: #e8491d;
+}
+
+nav, header, footer {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 6%;
+  width: 100%;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+li.grp#current a {
+  opacity: 1;
+  border-bottom: 1px solid #e8491d;
+}
+
+li.grp a:hover {
+  animation: topnavHover 1s ease forwards;
+}
+
+@keyframes topnavHover {
+  0% {
+    opacity: .5;
+    border-bottom: 1px solid #e8491d;
+  }
+  100% {
+    opacity: 1;
+    border-bottom: 1px solid #e8491d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button-2 {
+  display: inline-block;
+  background: linear-gradient(#e2caae, #c39f70);
+  border-bottom: 1px solid #a68861;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: #715b3e;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.button-1 {
+  height: 38px;
+  background: #35424a;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.button-general {
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(#e2caae, #c39f70);
+  border-bottom: 1px solid #a68861;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 3px 10px;
+  border-radius: 30px;
+  color: #715b3e;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.button-hero {
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(#e2caae, #c39f70);
+  border-bottom: 1px solid #a68861;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px 15px;
+  color: #715b3e;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.button-hero:hover {
+  background: linear-gradient(#c39f70, #c39f70);
+}
+
+form button {
+  display: inline-block;
+  background: linear-gradient(#e2caae, #c39f70);
+  border-bottom: 1px solid #a68861;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: #715b3e;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+form textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  background: #292932;
+  padding: 15px;
+  color: #acacb1;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+  min-height: 150px;
+}
+
+button, input, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button, input {
+  line-height: normal;
+}
+
+form input, form textarea {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #474747;
+}
+
+h2 a:hover {
+  color: #8f7655;
+  text-shadow: 0.2px 0px 0px black;
+} 
+
+footer a:hover {
+  color: #8f7655;
+}
+
+@keyframes text {
+  0% {
+    text-decoration: none;
+    color: #474747;
+    font-style: italic;
+    opacity: .1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    text-decoration: underline;
+    color: #dcc2a0;
+    text-shadow: .5px 0px .5px black;
+    opacity: 1;
+  }
+}
+
+
+/********************************************** SECTION-NEWS-DIV **********************************************************/
+.main {
+  text-align: center;
+}
+
+.main img {
+  box-shadow: 1px 1px 3px black;
+  width: 100%;
+}
+
+.p-a {
+  font-weight: 400;
+  line-height: 1.7;
+  font-family: "Gotham SSm A","Gotham SSm B",sans-serif !important;
+}
+
+.start-letter {
+  color: red;
+  font-size: 30px;
+}
+
+.main h1 {
+  font-size: 30px;
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  .main h1 {
+    font-size: 14px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
+

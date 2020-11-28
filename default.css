@@ -1,0 +1,836 @@
+/********************************************** GENERAL STYLES **********************************************************/
+body {
+  margin: 0;
+  padding: 0;
+  background: url("images/bg01.png") repeat;
+  line-height: 1;
+}
+
+#logo {
+  float: left;
+  width: 70px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.church-name {
+  float: left;
+}
+
+#logo-1 {
+  color: #e8491d;
+}
+
+nav, header, footer {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 100%;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+li.grp#current a {
+  opacity: 1;
+  border-bottom: 1px solid #e8491d;
+}
+
+li.grp a:hover {
+  animation: topnavHover 1s ease forwards;
+}
+
+@keyframes topnavHover {
+  0% {
+    opacity: .5;
+    border-bottom: 1px solid #e8491d;
+  }
+  100% {
+    opacity: 1;
+    border-bottom: 1px solid #e8491d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button-2 {
+  display: inline-block;
+  background: linear-gradient(#e2caae, #c39f70);
+  border-bottom: 1px solid #a68861;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: #715b3e;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.button-1 {
+  height: 38px;
+  background: #35424a;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.button-general {
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(#e2caae, #c39f70);
+  border-bottom: 1px solid #a68861;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 3px 10px;
+  border-radius: 30px;
+  color: #715b3e;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.button-hero {
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(#e2caae, #c39f70);
+  border-bottom: 1px solid #a68861;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px 15px;
+  color: #715b3e;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.button-hero:hover {
+  background: linear-gradient(#c39f70, #c39f70);
+}
+
+form textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  background: #292932;
+  padding: 15px;
+  color: #acacb1;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+  min-height: 150px;
+}
+
+button, input, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button, input {
+  line-height: normal;
+}
+
+form input, form textarea {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #474747;
+}
+
+h2 a:hover {
+  animation: text .3s forwards ease-in;
+} 
+
+h1, h2 {
+  color: #000000;
+  font-family: 'Kadwa', serif;
+}
+
+h3, h4, h5, h6, p a {
+  font-family: 'Crimson Text', serif;
+}
+
+footer a:hover {
+  color: #8f7655;
+}
+
+.divider {
+  width: 80%;
+}
+
+@keyframes text {
+  0% {
+    text-decoration: none;
+    color: #474747;
+    font-style: italic;
+    opacity: .1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    text-decoration: underline;
+    color: #dcc2a0;
+    text-shadow: .5px 0px .5px black;
+    opacity: 1;
+    font-style: italic;
+  }
+}
+
+
+/********************************************** SECTION 1 **********************************************************/
+.container.section-1 {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.row.hero {
+  position: absolute;
+  margin-top: 18%;
+  margin-left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 200;
+  width: 50%;
+}
+
+.slider {
+  overflow: hidden;
+  z-index: -10;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, .3); 
+  position: absolute; 
+  width: 100%; 
+  height: 515px;
+  z-index: 10;
+}
+
+.hero-message {
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 300;
+  font-family: 'Kadwa', serif;
+}
+
+.hero-submessage {
+  color: white; 
+  text-shadow: 1px 1px 3px black; 
+  font-style: italic; 
+}
+
+@media screen and (max-width: 840px) {
+  .row.hero {
+    width: 80%;
+  }
+
+  .hero-message {
+    font-size: 14px;
+  }
+
+  .hero-submessage {
+    font-size: 10px;
+  }
+
+  .button-hero {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.slider img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  15% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  40% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  65%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  90%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+
+/* #sliderDiv {
+  animation: slider 30s ease-in-out infinite forwards;
+} */
+
+
+/********************************************** SECTION 2 **********************************************************/
+.section-2 {
+  background-color: #e8491d;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.newsletter h2 {
+  float: left;
+  margin-left: 40px;
+}
+
+.inputfield {
+  float: right;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+.newsletter h2 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s infinite forwards ease;
+  font-family: 'Crimson Text', serif;
+}
+
+.inputfield form input {
+  padding: 20px;
+  margin-right: 10px;
+  height: 35px;
+  width: 250px;
+}
+
+.inputfield form button {
+  height: 38px;
+  background: #35424a;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+@keyframes typing {
+  0%{
+    width: 0ch;
+  }
+  80% {
+    width: 26ch;
+  }
+}
+
+
+/********************************************** SECTION 3 **********************************************************/
+.section-3 h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.box {
+  display: flex;
+  margin-top: 70px;
+  padding-left: 40px;
+}
+
+.text {
+  padding-right: 20px;
+  padding-left: 7px;
+}
+
+.text h4 {
+  margin: 0;
+}
+
+.box img {
+  max-height: 140px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px black;
+  width: 250px;
+}
+
+.text h4 a {
+  text-decoration: underline;
+  color: #474747;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.text h4 a:hover {
+  animation: text .3s forwards ease-in;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #474747;
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+}
+
+/* @media screen and (max-width: 840px) {
+  .section-3 h1 {
+    font-size: 14px;
+  }
+
+  .section-3 img {
+    height: 50px;
+  }
+  
+  .text h2 {
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 10px;
+  }
+} */
+
+/********************************************** SECTION 4 **********************************************************/
+.section-4 {
+  background: #e8491d;
+}
+
+.bible-verse {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.bible-verse h3 {
+  text-align: center;
+  color: #ffffff !important;
+  font-style: italic;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px black;
+  font-size: 20px;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/********************************************** NEWS-DIV **********************************************************/
+.news-div {
+  text-align: center;
+}
+
+h1.col-12 {
+  margin-top: 70px;
+  font-size: 40px;
+}
+
+.news-div div.col-3 {
+  margin-top: 100px;
+}
+
+.news-div img {
+  width: 90%;
+  box-shadow: 1px 1px 3px black;
+}
+
+.news-div h5 {
+  color: #474747;
+  font-style: italic;
+}
+
+.news-div h4 a {
+  text-decoration: underline;
+  color: #474747;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.news-div h4:hover a {
+  animation: text .3s forwards ease-in;
+}
+
+
+/********************************************** EVENT & SERMON **********************************************************/
+.event-sermon {
+  padding: 70px;
+}
+
+.date {
+  padding-left: 20px;
+}
+
+.preacher {
+  padding-left: 20px;
+}
+
+div.col-6.event {
+  padding-right: 50px;
+}
+
+.event-list {
+  border-top: 1px solid black;
+  padding-top: 25.8px;
+  padding-bottom: 25.8px;
+  list-style: none;
+}
+
+.event-list.last {
+  border-bottom: 1px solid black;
+}
+
+.event-name {
+  text-decoration: none;
+  width: fit-content;
+  display: inline-block;
+  font-style: italic;
+  color: #474747;
+  font-weight: 600;
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+}
+
+.event-name a:hover {
+  animation: text .3s forwards ease-in;
+}
+
+.date-location {
+  float: right;
+  font-weight: 900;
+  font-style: italic;
+  color: #000000;
+  width: fit-content;
+  padding-left: 20px;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.date-e {
+  padding-right: 50px;
+}
+
+.sermon-list {
+  border-top: 1px solid black;
+  list-style-position: inside;
+  list-style: none;
+  padding: 26px 0;
+}
+
+.sermon-list.last {
+  border-bottom: 1px solid black;
+}
+
+.sermon-topic {
+  text-decoration: none;
+  padding-left: 20px;
+  width: fit-content;
+  display: inline-block;
+  font-style: italic;
+  color: #474747;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Crimson Text', serif;
+}
+
+.sermon-topic:hover {
+  animation: text .3s forwards ease-in;
+}
+
+.date-preacher {
+  font-weight: 900;
+  font-style: italic;
+  color: #000000;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.audio-video {
+  min-width: 280px;
+  display: inline;
+}
+
+.sermon-img {
+  width: fit-content;
+  float: left;
+}
+
+a.audio-video-btn {
+  text-decoration: none;
+}
+
+.audio-video-btn {
+  display: inline-block;
+  background: linear-gradient(#e2caae, #c39f70);
+  border-bottom: 1px solid #a68861;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 3px 10px;
+  border-radius: 30px;
+  color: #715b3e;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.button-s, .button-e {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer.section-5 h2 {
+  color: red;
+}
+
+
+/********************************************** Mobile **********************************************************/
+@media screen and (max-width: 840px) {
+  .inputfield {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2px;
+  }
+
+  .newsletter h2 {
+    float: none;
+    text-align: center;
+    animation: none;
+    font-size: 10px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .inputfield form input {
+    padding: 2px;
+    width: 150px;
+    height: 20px;
+    font-size: 50%;
+  }
+
+  .inputfield form button {
+    height: 20px;
+    font-size: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 0;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .box img {
+    width: 100px;
+	max-height: 55px;
+  }
+
+  .text h4 a {
+    font-size: 12px;
+  }
+
+  .bible-verse {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .bible-verse h3 {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .section-3 h1 {
+    font-size: 14px;
+  }
+  
+  .text h2 {
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 10px;
+  }
+
+  h1.col-12 {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+
+  .news-div div.col-3 {
+    margin-top: 20px;
+  }
+
+  .news-div img {
+    width: 50%;
+  }
+
+  .news-div h4 a {
+    font-size: 12px;
+  }
+
+  .news-div div.col-3 h4 {
+    margin: 0;
+  }
+
+  .news-div h5 {
+    font-size: 10px;
+    margin: 7px;
+  }
+  .event-sermon div.col-6.event h1 {
+    margin-top: 40px;
+  }
+
+  .event-sermon div.col-6.sermon h1 {
+    margin-top: 40px;
+  }
+
+  .event-name {
+    font-size: 12px;
+  }
+
+  div.audio-video img {
+    width: 7px;
+  }
+
+  .button-s, .button-e {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  .event-name a {
+    font-size: 12px;
+  }
+
+  .event-list {
+    padding: 20px 0px;
+  }
+
+  .date-e {
+    font-size: 10px;
+  }
+
+  .date-location {
+    font-size: 10px;
+  }
+
+  .sermon-topic {
+    font-size: 12px;
+  }
+
+  .sermon-list {
+    padding: 20px 0px;
+  }
+
+  .date {
+    font-size: 10px;
+  }
+
+  .preacher {
+    font-size: 10px;
+  }
+
+  .button-general {
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+
+  .event-sermon {
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+
+  div.col-6.event {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .col-6.sermon {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .date-location {
+    float: none;
+    padding-left: 0;
+  }
+}
+
+
+

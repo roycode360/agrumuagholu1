@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Precious Roy">
+        <title>Assemblies Of God | About Us</title>
+        <link rel = "stylesheet" type = "text/css" href = "about.css">
+        <link rel = "stylesheet" type = "text/css" href = "../Global/header-footer.css">
+        <script type="text/javascript" src="../Global/general.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="topnav-left">
+                <a href="../Homepage/index.htm"><img id="logo" src="../Homepage/images/logo1.jpg"></a>
+                <div class="church-name"><h1><span id="logo-1">AG</span> 1 Rumuagholu 1</h1></div>
+            </div>
+            <div class="topnav-right">
+                <ul id="menu" class="links">
+                    <li class="grp one"><a href="../Homepage/index.htm">Home</a></li>
+                    <li class="grp" id="current"><a href="../About/about.htm">About Us</a></li>
+                    <li class="grp"><a href="#">News</a></li>
+                    <li class="grp"><a href="#">Media</a></li>
+                    <li class="grp"><a href="#">Departments</a></li>
+                    <li class="grp"><a href="../Contact/contact.htm">Contact Us</a></li>
+                    <li id="icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+                </ul>
+            </div>
+        </header>
+
+        
+
+        <footer class="section-5">
+            <div class="adress">
+                <h2>Our Address</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi perspiciatis magnam, ab ipsa laboriosam tempore tenetur, aliquid repellat, ex cum dicta reiciendis accusamus. Omnis repudiandae quasi mollitia, iusto odio dignissimos.<br>
+                <p>
+                    329 Church St, Garland, TX 75042<br>
+                    (425) 853 442 552<br>
+                    info@yourchurch.com<br>
+                </p>  
+                </p>
+            </div>
+            <div class="links-bottom">
+                <h2>Topics from last meetings</h2>
+                <ul>
+                <li><a href="#">Obedience is key to the kingdom</a></li>
+                <li><a href="#">Jesus is the way, the truth and life</a></li>
+                <li><a href="#">Our saviour regins forever</a></li>
+                <li><a href="#">The Lord is mighty and powerful</a></li>
+                <li><a href="#">Trust in the lord with all your heart</a></li>
+                <li><a href="#">Heaven is the destination of the righteous</a></li>
+                </ul>
+            </div>
+            <div class="hit-us-up">
+                <form>
+                    <h2>Membership form</h2>
+                    <input type="text" placeholder="Your name...">
+                    <input type="text" placeholder="Department...">
+                    <textarea placeholder="Tell us about you..."></textarea>
+                    <button type="submit">Join Us</button>
+                </form>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="copyright">
+                <p>Assemblies Of God copyright � 2019</p>
+            </div>
+        </footer>
+    </body>
+</html>
